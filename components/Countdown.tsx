@@ -1,7 +1,6 @@
 "use client";
 import React, { ChangeEvent, useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 const Countdown = () => {
   const [duration, setDuration] = useState<number | string>("");
   const [timeLeft, setTimeLeft] = useState<number>(0);
