@@ -6,7 +6,7 @@ const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState<number>(0);
   const [isActive, setIsActive] = useState<boolean>(false);
   const [isPaused, setIsPaused] = useState<boolean>(false);
-  const timerReference = useRef<NodeJS.Timeout | null>(null);
+  const timerReference = useRef<NodeJS.Timeout | null>(null); 
 
   // The handleSetDuration function sets the countdown time based on user input, checks if input is positive, sets remaining time, ensures timer is active, and clears existing intervals.
   const handleSetDuration = (): void => {
